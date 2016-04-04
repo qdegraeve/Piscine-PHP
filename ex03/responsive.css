@@ -1,0 +1,109 @@
+body
+{    
+  background-image: url("http://referentiel.nouvelobs.com/file/14828320.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+table
+{
+  width: 95%;
+  margin: auto;
+}
+
+td
+{
+  width: 5.5%;
+  height: auto;
+  border: 1px solid black;
+}
+
+div.container 
+{
+  width: 100%;
+  display:inline-block;
+}
+
+p
+{ 
+  text-align:center;
+}
+
+h3.elem{
+  text-align: center;
+  font-size: 2vw;
+  margin: 2px;
+}
+
+p.num{
+  margin-left: 1px;
+  margin: 2px;  
+  font-size: 1vw;
+  text-align: left;
+}
+
+p.poid
+{
+  margin-right: 1px;
+  margin: 2px;  
+  font-size: 1vw;
+  text-align: right;
+}
+
+.empty
+{
+  border: none;
+}
+
+.metal
+{
+  background-color: #B7ADE0;
+  opacity: 0.7;
+}
+
+.alkali_metal
+{
+  background-color: #5947A1;
+  opacity: 0.7;
+}
+
+.alkaline_earth_metal
+{
+  background-color: #8577BD;
+  opacity: 0.7;
+}
+.metalloid
+{
+  background-color: #F5E7D3;
+  opacity: 0.7;
+}
+
+.metalloid2
+{
+  background-color: #F2BA6B;
+  opacity: 0.7;
+}
+
+.non_metal
+{
+  background-color: #DAF2DC;
+  opacity: 0.7;
+}
+
+.halogen
+{
+  background-color: #8FD995;
+  opacity: 0.7;
+}
+
+.noble_gas
+{
+  background-color: #48E855;
+  opacity: 0.7;
+}
+
+.lanthanide
+{
+  background-color: #C4A3C2;
+  opacity: 0.7;
+}

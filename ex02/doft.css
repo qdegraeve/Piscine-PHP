@@ -1,0 +1,155 @@
+body
+{
+	background-color: #4D4D4D;
+	padding-top: 10px;
+}
+
+#frame
+{
+	margin: auto;
+	width: 1400px;
+}
+header
+{
+	height: 140px;
+	background-color: #8F8F8F;
+	border-radius: 5px;
+	margin: auto;
+	box-shadow: 8px 8px 5px black;
+}
+
+img
+{
+	margin-top: 10px;
+	height: 120px;
+}
+
+.img_banner
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ban_right
+{
+	display: flex;
+	margin: 0px 10px;
+}
+
+.ban_right img
+{
+	height: 150px;
+}
+
+.icons
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.icons img
+{
+	width: 20px;
+	height: auto;
+	margin-bottom: 30px;
+}
+.container
+{
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main
+{	
+	width: 80%;
+	background-color: #8F8F8F;
+	margin: 20px 0px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 5px black;
+}
+
+.main img
+{
+	width: auto;
+	height: auto;
+	padding: 10px;
+}
+
+.container aside
+{
+	display: flex;
+	flex-direction: column;
+	width: 10%;
+	background-color: #8F8F8F;
+	margin: 20px 30px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 5px black;
+	height: 400px;
+	justify-content: flex-start;
+}
+
+aside img
+{
+	width: 55%;
+	height: auto;
+	margin: 8px auto;
+}
+
+aside div
+{
+	margin: 8px auto;
+}
+
+aside img:hover, aside div:hover
+{
+	padding: 3px;
+	border: solid 4px red;
+	border-radius: 4px;
+}
+
+.dialog-box
+{
+	position: relative;
+	font-family: Comic, arial;
+	font-size: 1.3em;
+	padding-left: 10px;
+	padding-right: 40px;
+	width: 480px;
+	background-color: #87FF87;
+	border-radius: 10px;
+	padding-bottom: 40px;
+	padding-top: 5px;
+	box-shadow: 8px 8px 5px black;
+	margin-left: -60px;
+	margin-top: -100px;
+	z-index: 5;
+}
+
+.right div
+{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 75px;
+	background-image: url("resources/brick.jpg");
+	background-repeat: repeat;
+}
+
+.none
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+strong
+{
+	font-size: 1.6em;
+	font-weight: 100;
+}
+
+#shadow
+{
+	text-shadow: 5px 5px 5px #ff0000;
+	blur-radius: 10;
+}
