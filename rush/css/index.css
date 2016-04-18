@@ -1,0 +1,170 @@
+body
+{
+	background-color: #4D4D4D;
+	padding-top: 10px;
+}
+
+#frame
+{
+	margin: auto;
+	width: 100%;
+}
+
+header
+{
+	position: relative;
+	height: 140px;
+	background-color: #8F8F8F;
+	margin: auto;
+	box-shadow: 8px 8px 5px black;
+	z-index: 5;
+}
+
+.basket:hover .basket-hidden, .basket:active .basket-hidden
+{
+	display: block;
+	background-color: white;
+	border: solid 2px black;
+	box-shadow: 8px 8px 5px black;
+}
+
+.basket:active .basket-hidden
+{
+	display: block;
+	background-color: white;
+	border: solid 2px black;
+	box-shadow: 8px 8px 5px black;
+}
+
+.basket-hidden
+{
+	display: none;
+	background-color: white;
+	border: solid 2px black;
+	box-shadow: 8px 8px 5px black;
+}
+
+img
+{
+	margin-top: 10px;
+	height: 120px;
+}
+
+.img_banner
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.img_banner h1
+{
+	font-size: 4vw;
+}
+
+.ban_right
+{
+	display: flex;
+	margin: 0px 10px;
+}
+
+.ban_right img
+{
+	height: 150px;
+}
+
+.icons
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.basket
+{
+	display: flex;
+	flex-direction: column;
+	margin-right: 30px;
+}
+
+.basket img
+{
+	height: auto;
+}
+
+.icons img
+{
+	width: 20px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.container
+{
+	width: 100%;
+	position: absolute;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	z-index: 1;
+}
+
+.main
+{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	background-color: rgba(255 255 255 .6);
+	margin: 20px auto;
+	flex-wrap:wrap;
+	height: 100%;
+	width: 98%;
+}
+
+.main img
+{
+	width: auto;
+	height: auto;
+	padding: 10px;
+}
+
+.container aside
+{
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	background-color: #8F8F8F;
+	margin: 20px auto;
+	box-shadow: 8px 8px 5px black;
+	height: 400px;
+	justify-content: flex-start;
+}
+
+aside div
+{
+	margin: 8px auto;
+}
+
+.dialog-box
+{
+	position: relative;
+	font-family: Comic, arial;
+	font-size: 1.3em;
+	padding-left: 10px;
+	padding-right: 40px;
+	width: 480px;
+	background-color: #87FF87;
+	border-radius: 10px;
+	padding-bottom: 40px;
+	padding-top: 5px;
+	box-shadow: 8px 8px 5px black;
+	margin-left: -60px;
+	margin-top: -100px;
+	z-index: 5;
+}
+
+.none
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}

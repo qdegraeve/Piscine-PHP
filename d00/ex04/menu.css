@@ -1,0 +1,59 @@
+.menu
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.menu, .dropdown a, .button
+{
+	background-color: black;
+	font-family: arial;
+	font-size: 45px;
+	color: white;
+}
+
+.button
+{
+	border: none;
+	height: 100%;
+	text-align: center;
+}
+
+.dropdown
+{
+	height: 50px;
+}
+
+.dropdown-content
+{
+	text-align: center;
+	display: none;
+}
+
+.dropdown-content a
+{
+	margin: auto;
+	display: block;
+	text-decoration: none;
+	padding: 10px 5px;
+}
+
+.dropdown-content a:hover
+{
+	background-color: #F3F3F3;
+	color: black;
+}
+
+.dropdown:hover .button
+{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}

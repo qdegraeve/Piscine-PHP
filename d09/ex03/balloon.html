@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+
+<body>
+	<div id="balls" onclick="balloon_click()" onmouseleave="balloon_leave()" style="height: 200px; width: 200px; background: red; border-radius: 50%;">	
+	</div>	
+	<script>
+		function balloon_click() {
+    		var ball = document.getElementById("balls");
+    		var x = parseInt(ball.style.width);
+    		var colors = new Array('red', 'green', 'blue');
+
+    		for (var i = 0; i < colors.length ; i++) {
+    			if (colors[i] == ball.style.background) {
+    				if (i + 1 < colors.length)
+						ball.style.background = colors[i + 1];
+    				else
+    					ball.style.background = colors[0];
+    				break ;
+    			}
+    		}
+
+    		if (x < 420) {
+    			ball.style.height = x + 10 + "px";
+    			ball.style.width = x + 10 + "px";
+    		}
+    		else {
+    			ball.style.width = "200px";
+    			ball.style.height = "200px";    			    			
+    		}
+		}
+
+		function balloon_leave() {
+			var ball = document.getElementById("balls");
+    		var x = parseInt(ball.style.width);
+    		var colors = new Array('red', 'green', 'blue');
+
+    		for (var i = 0; i < colors.length ; i++) {
+    			if (colors[i] == ball.style.background) {
+    				if (i > 0)
+						ball.style.background = colors[i - 1];
+    				else
+    					ball.style.background = colors[2];
+    				break ;
+    			}
+    		}
+
+    		if (x > 200) {
+    			ball.style.height = x - 5 + "px";
+    			ball.style.width = x - 5 + "px";
+    		}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		setInterval(function use() {alert("Please, use me...")}, 30000);
+			
+		$(document).ready(function () {
+			$('#calc').click(function () {
+				if (($left = parseFloat($('#val_left').val())) % 1 == 0 && ($right = parseFloat($("#val_right").val())) % 1 == 0) {
+					$result = (($("select").val() == '/' || $('select').val() == '%') && $right == 0) ?	$result = "It's over 9000!" : eval($left + $('#select').val() + $right);
+				}
+				else
+					$result = "Error :(";
+				console.log($result);
+				alert($result);
+
+			})
+		})
+	</script>
+</head>
+<body>
+<input id="val_left" type="text"></input>
+<select id="select">
+	<option>-</option>
+	<option>+</option>
+	<option>*</option>
+	<option>/</option>
+	<option>%</option>
+</select>
+<input id="val_right" type="text"></input>
+<input id="calc" type="submit" value="Try me!"></input>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?php session_start() ?>
+<form method="POST" action="index.php">
+	<p>
+		<h1>Créer un compte</h1><br />
+		Nom: <input type="text" name="lastname" required />
+		<br />
+		Prenom: <input type="text" name="firstname" required />
+		<br />
+		Adresse e-mail: <input type="email" name="email" required />
+		<br />
+		Mot de passe: <input type="password" name="passwd" required />
+		<br />
+		Confirmer le mot de passe: <input type="password" name="passwd_conf" required />
+		<br />
+		<input type="submit" name="submit" value="CREATE" />
+	</p>
+</form>

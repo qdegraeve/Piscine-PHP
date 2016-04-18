@@ -1,0 +1,31 @@
+.product
+{
+	width: 40%;
+	margin: 5%;
+	text-align: center;
+}
+
+.product div
+{
+	border: solid 2px black;
+	margin: 2px 0px;
+}
+
+.product .apercu, .product .tags
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.apercu img
+{
+	width: 30%;
+	margin: 15px 5%;
+	object-fit: contain;
+}
+
+.apercu p
+{
+	width: 50%;
+	margin: 15px 5%;
+}

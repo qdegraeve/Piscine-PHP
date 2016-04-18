@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			setInterval(function use() {alert("Please, use me...")}, 30000);
+			
+			function calc() {
+				var operator = document.getElementById("select").value
+				var left = parseInt(document.getElementById("val_left").value)
+				var right = parseInt(document.getElementById("val_right").value)
+				var result = 0;
+				if (parseFloat(document.getElementById("val_left").value) == left && parseFloat(document.getElementById("val_right").value) == right) {
+					if ((operator == '/' || operator == '%') && right == 0)
+						result = "It's over 9000!";
+					else
+						result = eval(left + operator + right);
+				}
+				else
+					result = "Error :(";
+				console.log(result);
+				alert(result);
+			}
+		</script>
+	</head>
+	<body>
+		<input id="val_left" type="text"></input>
+		<select id="select">
+			<option>-</option>
+			<option>+</option>
+			<option>*</option>
+			<option>/</option>
+			<option>%</option>
+		</select>
+		<input id="val_right" type="text"></input>
+		<input type="submit" onclick="calc()" value="Try me!"></input>
+	</body>
+</html>

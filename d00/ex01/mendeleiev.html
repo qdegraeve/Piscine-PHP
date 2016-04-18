@@ -1,0 +1,929 @@
+    <!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  body
+  {
+    background-image: url("http://referentiel.nouvelobs.com/file/14828320.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  td
+  {
+      width: 60px;
+      height: 65px;
+      border: 1px solid black;
+  }
+  div.container {
+      width: 100%;
+      display:inline-block;
+    }
+    p {
+      text-align:center;
+    }
+    h3.elem{
+      text-align: center;
+      font-size: 25px;
+      margin: 2px;
+    }
+    p.num{
+      margin-left: 1px;
+      margin: 2px;  
+      font-size: 12px;
+      text-align: left;
+    }
+    p.poid
+    {
+      margin-right: 1px;
+      margin: 2px;  
+      font-size: 12px;
+      text-align: right;
+    }
+    .empty{
+      border: none;
+    }
+    .metal
+    {
+      background-color: #B7ADE0;
+      opacity: 0.7;
+    }
+    .alkali_metal
+    {
+      background-color: #5947A1;
+      opacity: 0.7;
+    }
+    .alkaline_earth_metal
+    {
+      background-color: #8577BD;
+      opacity: 0.7;
+    }
+    .metalloid
+    {
+      background-color: #F5E7D3;
+      opacity: 0.7;
+    }
+    .metalloid2
+    {
+      background-color: #F2BA6B;
+      opacity: 0.7;
+    }
+    .non_metal
+    {
+      background-color: #DAF2DC;
+      opacity: 0.7;
+    }
+    .halogen
+    {
+      background-color: #8FD995;
+      opacity: 0.7;
+    }
+    .noble_gas
+    {
+      background-color: #48E855;
+      opacity: 0.7;
+    }
+    .lanthanide
+    {
+      background-color: #C4A3C2;
+      opacity: 0.7;
+    }
+    </style> 
+    <meta charset="UTF-8"> 
+</head>
+<body>
+  <table contenteditable="true">
+  <tr>
+      <td class="metalloid">
+        <div class="container">
+          <p class="poid">1.008</p>
+          <h3 class="elem">H</h3>
+          <p class="num">1</p>
+        </div>
+      </td>
+      <td colspan="16" class="empty"></td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">4.002602</p>
+          <h3 class="elem">He</h3>
+          <p class="num">2</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">6.94</p>
+          <h3 class="elem">Li</h3>
+          <p class="num">3</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">9.01218</p>
+          <h3 class="elem">Be</h3>
+          <p class="num">4</p>
+        </div>
+      </td>
+      <td colspan="10" class="empty"></td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">10.81</p>
+          <h3 class="elem">B</h3>
+          <p class="num">5</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">12.011</p>
+          <h3 class="elem">C</h3>
+          <p class="num">6</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">14.007</p>
+          <h3 class="elem">N</h3>
+          <p class="num">7</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">15.999</p>
+          <h3 class="elem">O</h3>
+          <p class="num">8</p>
+        </div>
+      </td>
+      <td class="halogen">
+        <div class="container">
+          <p class="poid">18.9984</p>
+          <h3 class="elem">F</h3>
+          <p class="num">9</p>
+        </div>
+      </td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">20.1797</p>
+          <h3 class="elem">Ne</h3>
+          <p class="num">10</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">22.9897</p>
+          <h3 class="elem">Na</h3>
+          <p class="num">11</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">24.305</p>
+          <h3 class="elem">Mg</h3>
+          <p class="num">12</p>
+        </div>
+      </td>
+      <td colspan="10" class="empty"></td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">26.9815</p>
+          <h3 class="elem">Al</h3>
+          <p class="num">13</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">28.085</p>
+          <h3 class="elem">Si</h3>
+          <p class="num">14</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">30.9737</p>
+          <h3 class="elem">P</h3>
+          <p class="num">15</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">32.06</p>
+          <h3 class="elem">S</h3>
+          <p class="num">16</p>
+        </div>
+      </td>
+      <td class="halogen">
+        <div class="container">
+          <p class="poid">35.45</p>
+          <h3 class="elem">Cl</h3>
+          <p class="num">17</p>
+        </div>
+      </td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">39.948</p>
+          <h3 class="elem">Ar</h3>
+          <p class="num">18</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">39.0983</p>
+          <h3 class="elem">K</h3>
+          <p class="num">19</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">40.078</p>
+          <h3 class="elem">Ca</h3>
+          <p class="num">20</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">44.9559</p>
+          <h3 class="elem">Sc</h3>
+          <p class="num">21</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">47.867</p>
+          <h3 class="elem">Ti</h3>
+          <p class="num">22</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">50.9415</p>
+          <h3 class="elem">V</h3>
+          <p class="num">23</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">51,9961</p>
+          <h3 class="elem">Cr</h3>
+          <p class="num">24</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">54.9380</p>
+          <h3 class="elem">Mn</h3>
+          <p class="num">25</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">55.845</p>
+          <h3 class="elem">Fe</h3>
+          <p class="num">26</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">58.9331</p>
+          <h3 class="elem">Co</h3>
+          <p class="num">27</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">58.6934</p>
+          <h3 class="elem">Ni</h3>
+          <p class="num">28</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">63.546</p>
+          <h3 class="elem">Cu</h3>
+          <p class="num">29</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">65.38</p>
+          <h3 class="elem">Zn</h3>
+          <p class="num">30</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">69.723</p>
+          <h3 class="elem">Ga</h3>
+          <p class="num">31</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">72.63</p>
+          <h3 class="elem">Ge</h3>
+          <p class="num">32</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">74.9215</p>
+          <h3 class="elem">As</h3>
+          <p class="num">33</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">78.971</p>
+          <h3 class="elem">Se</h3>
+          <p class="num">34</p>
+        </div>
+      </td>
+      <td class="halogen">
+        <div class="container">
+          <p class="poid">79.904</p>
+          <h3 class="elem">Br</h3>
+          <p class="num">35</p>
+        </div>
+      </td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">83.798</p>
+          <h3 class="elem">Kr</h3>
+          <p class="num">36</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">85.4678</p>
+          <h3 class="elem">Rb</h3>
+          <p class="num">37</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">87.62</p>
+          <h3 class="elem">Sr</h3>
+          <p class="num">38</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">88.90584</p>
+          <h3 class="elem">Y</h3>
+          <p class="num">39</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">91.224</p>
+          <h3 class="elem">Zr</h3>
+          <p class="num">40</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">92.90637</p>
+          <h3 class="elem">Nb</h3>
+          <p class="num">41</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">95.95</p>
+          <h3 class="elem">Mo</h3>
+          <p class="num">42</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">98</p>
+          <h3 class="elem">Tc</h3>
+          <p class="num">43</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">101.07</p>
+          <h3 class="elem">Ru</h3>
+          <p class="num">44</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">102.905</p>
+          <h3 class="elem">Rh</h3>
+          <p class="num">45</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">106.42</p>
+          <h3 class="elem">Pd</h3>
+          <p class="num">46</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">107.8682</p>
+          <h3 class="elem">Ag</h3>
+          <p class="num">47</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">112.414</p>
+          <h3 class="elem">Cd</h3>
+          <p class="num">48</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">114.818</p>
+          <h3 class="elem">In</h3>
+          <p class="num">49</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">118.710</p>
+          <h3 class="elem">Sn</h3>
+          <p class="num">50</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">121.760</p>
+          <h3 class="elem">Sb</h3>
+          <p class="num">51</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">127.60</p>
+          <h3 class="elem">Te</h3>
+          <p class="num">52</p>
+        </div>
+      </td>
+      <td class="halogen">
+        <div class="container">
+          <p class="poid">126.904</p>
+          <h3 class="elem">I</h3>
+          <p class="num">53</p>
+        </div>
+      </td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">131.293</p>
+          <h3 class="elem">Xe</h3>
+          <p class="num">54</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">132.91</p>
+          <h3 class="elem">Cs</h3>
+          <p class="num">55</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">137.33</p>
+          <h3 class="elem">Ba</h3>
+          <p class="num">56</p>
+        </div>
+      </td>
+      <td class="lanthanide">
+        <div class="container">
+          <h3 class="elem">La-Lu</h3>
+          <p class="num">57-71</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">178.49</p>
+          <h3 class="elem">Hf</h3>
+          <p class="num">72</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">180.95</p>
+          <h3 class="elem">Ta</h3>
+          <p class="num">73</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">183.84</p>
+          <h3 class="elem">W</h3>
+          <p class="num">74</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">186.21</p>
+          <h3 class="elem">Re</h3>
+          <p class="num">75</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">190.23</p>
+          <h3 class="elem">Os</h3>
+          <p class="num">76</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">192.22</p>
+          <h3 class="elem">Ir</h3>
+          <p class="num">77</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">195.08</p>
+          <h3 class="elem">Pt</h3>
+          <p class="num">78</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">196.97</p>
+          <h3 class="elem">Au</h3>
+          <p class="num">79</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">200.59</p>
+          <h3 class="elem">Hg</h3>
+          <p class="num">80</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">204.38</p>
+          <h3 class="elem">Tl</h3>
+          <p class="num">81</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">207.2</p>
+          <h3 class="elem">Pb</h3>
+          <p class="num">82</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">208.98</p>
+          <h3 class="elem">Bi</h3>
+          <p class="num">83</p>
+        </div>
+      </td>
+      <td class="metalloid2">
+        <div class="container">
+          <p class="poid">209</p>
+          <h3 class="elem">Po</h3>
+          <p class="num">84</p>
+        </div>
+      </td>
+      <td class="halogen">
+        <div class="container">
+          <p class="poid">210</p>
+          <h3 class="elem">At</h3>
+          <p class="num">85</p>
+        </div>
+      </td>
+      <td class="noble_gas">
+        <div class="container">
+          <p class="poid">222</p>
+          <h3 class="elem">Rn</h3>
+          <p class="num">86</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="alkali_metal">
+        <div class="container">
+          <p class="poid">223</p>
+          <h3 class="elem">Fr</h3>
+          <p class="num">87</p>
+        </div>
+      </td>
+      <td class="alkaline_earth_metal">
+        <div class="container">
+          <p class="poid">226</p>
+          <h3 class="elem">Ra</h3>
+          <p class="num">88</p>
+        </div>
+      </td>
+      <td class="lanthanide">
+        <div class="container">
+          <h3 class="elem">Ac-Lr</h3>
+          <p class="num">89-103</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">261</p>
+          <h3 class="elem">Rf</h3>
+          <p class="num">104</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">262</p>
+          <h3 class="elem">Db</h3>
+          <p class="num">105</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">266</p>
+          <h3 class="elem">Sg</h3>
+          <p class="num">106</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">264</p>
+          <h3 class="elem">Bh</h3>
+          <p class="num">107</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">277</p>
+          <h3 class="elem">Hs</h3>
+          <p class="num">108</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">268</p>
+          <h3 class="elem">Mt</h3>
+          <p class="num">109</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">281</p>
+          <h3 class="elem">Ds</h3>
+          <p class="num">110</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">280</p>
+          <h3 class="elem">Rg</h3>
+          <p class="num">111</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">285</p>
+          <h3 class="elem">Uub</h3>
+          <p class="num">112</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">284</p>
+          <h3 class="elem">Uut</h3>
+          <p class="num">113</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">289</p>
+          <h3 class="elem">Uuq</h3>
+          <p class="num">114</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">288</p>
+          <h3 class="elem">Uup</h3>
+          <p class="num">115</p>
+        </div>
+      </td>
+      <td class="metal">
+        <div class="container">
+          <p class="poid">293</p>
+          <h3 class="elem">Uuh</h3>
+          <p class="num">116</p>
+        </div>
+      </td>
+      <td class="metalloid">
+        <div class="container">
+          <p class="poid">292</p>
+          <h3 class="elem">Uus</h3>
+          <p class="num">117</p>
+        </div>
+      </td>
+      <td class="non_metal">
+        <div class="container">
+          <p class="poid">294</p>
+          <h3 class="elem">Uuo</h3>
+          <p class="num">118</p>
+        </div>
+      </td>
+    </tr>
+    <tr style="margin-top: 60px;">
+      <td colspan="3" class="empty"></td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">138.91</p>
+          <h3 class="elem">La</h3>
+          <p class="num">57</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">140.12</p>
+          <h3 class="elem">Ce</h3>
+          <p class="num">58</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">140.91</p>
+          <h3 class="elem">Pr</h3>
+          <p class="num">59</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">144.24</p>
+          <h3 class="elem">Nd</h3>
+          <p class="num">60</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">145</p>
+          <h3 class="elem">Pm</h3>
+          <p class="num">61</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">150.36</p>
+          <h3 class="elem">Sm</h3>
+          <p class="num">62</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">151.96</p>
+          <h3 class="elem">Eu</h3>
+          <p class="num">63</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">157.25</p>
+          <h3 class="elem">Gd</h3>
+          <p class="num">64</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">158.93</p>
+          <h3 class="elem">Tb</h3>
+          <p class="num">65</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">162.50</p>
+          <h3 class="elem">Dy</h3>
+          <p class="num">66</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">164.93</p>
+          <h3 class="elem">Ho</h3>
+          <p class="num">67</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">167.26</p>
+          <h3 class="elem">Er</h3>
+          <p class="num">68</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">168.93</p>
+          <h3 class="elem">Tm</h3>
+          <p class="num">69</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">173.04</p>
+          <h3 class="elem">Yb</h3>
+          <p class="num">70</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">174.97</p>
+          <h3 class="elem">Lu</h3>
+          <p class="num">71</p>
+      </td>
+    </tr>
+    <tr style="padding-top: 20px;">
+      <td colspan="3" class="empty"></td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">227</p>
+          <h3 class="elem">Ac</h3>
+          <p class="num">89</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">232.04</p>
+          <h3 class="elem">Th</h3>
+          <p class="num">90</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">231.04</p>
+          <h3 class="elem">Pa</h3>
+          <p class="num">91</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">238.03</p>
+          <h3 class="elem">U</h3>
+          <p class="num">92</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">237</p>
+          <h3 class="elem">Np</h3>
+          <p class="num">93</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">244</p>
+          <h3 class="elem">Pu</h3>
+          <p class="num">94</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">243</p>
+          <h3 class="elem">Am</h3>
+          <p class="num">95</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">247</p>
+          <h3 class="elem">Cm</h3>
+          <p class="num">96</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">247</p>
+          <h3 class="elem">Bk</h3>
+          <p class="num">97</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">251</p>
+          <h3 class="elem">Cf</h3>
+          <p class="num">98</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">252</p>
+          <h3 class="elem">Es</h3>
+          <p class="num">99</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">257</p>
+          <h3 class="elem">Fm</h3>
+          <p class="num">100</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">258</p>
+          <h3 class="elem">Md</h3>
+          <p class="num">101</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">259</p>
+          <h3 class="elem">No</h3>
+          <p class="num">102</p>
+      </td>
+      <td class="lanthanide">
+          <div class="container">
+          <p class="poid">262</p>
+          <h3 class="elem">Lr</h3>
+          <p class="num">103</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
